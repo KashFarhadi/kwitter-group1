@@ -2,6 +2,17 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { loginThenGoToUserProfile as login } from "../actions";
 import Spinner from "react-spinkit";
+import { Link } from "react-router-dom";
+import {
+  Button,
+  Form,
+  Grid,
+  Header,
+  Image,
+  Input,
+  Segment
+} from "semantic-ui-react";
+import logo from "../logo.svg";
 
 class LoginForm extends Component {
   state = { username: "", password: "" };

@@ -23,7 +23,7 @@ const login = loginData => dispatch => {
     .then(result => {
       return dispatch({
         type: LOGIN_SUCCESS,
-        payload: result
+        payload: result // success code or error code
       });
     })
     .catch(err => {
